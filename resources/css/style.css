@@ -1,0 +1,328 @@
+a {
+  text-decoration: none;
+}
+.nowrap {
+  flex-wrap: nowrap;
+}
+.cover img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.flex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.flex-sb {
+  justify-content: space-between;
+}
+.flex-l {
+  justify-content: flex-start;
+}
+.flex-sa {
+  justify-content: space-around;
+}
+.flex-c {
+  justify-content: center;
+}
+.flex-t {
+  align-items: flex-start;
+}
+.flex-b {
+  align-items: flex-end;
+}
+.flex-m {
+  align-items: center;
+}
+.flex-s {
+  align-items: stretch;
+}
+body {
+  font-family: 'Montserrat';
+  font-weight: 400;
+}
+.button a,
+.button button {
+  color: #fff;
+  font-size: 16px;
+  border-radius: 4px;
+  padding: 17px 26px 15px;
+  background: #2C7FC1;
+  text-align: center;
+  border: 2px solid #2C7FC1;
+  display: inline-block;
+  transition: all 0.3s ease 0s;
+  box-sizing: border-box;
+}
+.button a:hover,
+.button button:hover {
+  background: #fff;
+  transition: all 0.3s ease 0s;
+  color: #2C7FC1;
+}
+.inside {
+  width: 1200px;
+  padding: 0 12px;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+.poster {
+  background: url(../images/poster.jpg) no-repeat center;
+  height: 800px;
+}
+.header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  left: 0;
+  box-shadow: 0px 3px 11.96px 1.04px rgba(0, 0, 0, 0.1);
+}
+.header .logo {
+  margin-top: 20px;
+}
+.header .navigation {
+  margin-left: 160px;
+}
+.header .navigation li {
+  margin: 0 22px;
+}
+.header .navigation li a {
+  color: #000;
+}
+.header .navigation li a:hover {
+  text-decoration: underline;
+}
+.about-us {
+  padding-top: 140px;
+}
+.about-us .title {
+  text-align: center;
+}
+.about-us .title span {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 600;
+  display: inline-block;
+  background: #59aeba;
+  text-transform: uppercase;
+  padding: 4px 6px;
+}
+.about-us .left {
+  margin-top: -50px;
+}
+.about-us .right {
+  width: 600px;
+  margin-top: 30px;
+  color: #090909;
+  font-size: 18px;
+  line-height: 1.45;
+}
+.accordion {
+  padding: 140px 0 220px;
+}
+.accordion .inside {
+  width: 970px;
+}
+.accordion .inside .item {
+  margin-bottom: 10px;
+  border: 1px solid #59aeba;
+}
+.accordion .inside .item .table-title {
+  background: #59aeba;
+  color: #fff;
+  padding: 20px 60px;
+  position: relative;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.accordion .inside .item .table-title:before {
+  position: absolute;
+  top: 17px;
+  right: 54px;
+  content: "";
+  background: #fff;
+  height: 22px;
+  width: 1px;
+}
+.accordion .inside .item .table-title:after {
+  position: absolute;
+  right: 44px;
+  top: 27px;
+  width: 22px;
+  height: 1px;
+  background: #fff;
+  content: "";
+}
+.accordion .inside .item .body {
+  padding: 26px 30px 22px 60px;
+  line-height: 1.4;
+  font-style: 18px;
+  color: #080808;
+  display: none;
+}
+.accordion .inside .item.active .table-title:before {
+  display: none;
+}
+.accordion .inside .item.active .body {
+  display: block;
+}
+.course-page {
+  padding: 60px 0;
+}
+.course-page .title {
+  margin-bottom: 36px;
+}
+.course-page .title span {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 600;
+  display: inline-block;
+  background: #59aeba;
+  padding: 4px 6px;
+  text-transform: uppercase;
+}
+.course-page .item {
+  width: 370px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.course-page .item .overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  background: rgba(89, 174, 186, 0.74);
+  color: #fff;
+  opacity: 0;
+  transition: all 0.3s ease 0s;
+}
+.course-page .item .overlay .overlay-inner .button:nth-child(1) {
+  margin-bottom: 10px;
+}
+.course-page .item .overlay .overlay-inner .button a {
+  color: #fff;
+  padding: 0px;
+  border: 2px solid #fff;
+  width: 226px;
+  height: 72px;
+  line-height: 68px;
+  background: none;
+  border-radius: 0;
+  display: inline-block;
+  transition: all 0.3s ease 0s;
+  font-style: 18px;
+}
+.course-page .item .overlay .overlay-inner .button a:hover {
+  color: #59aeba;
+  background: #fff;
+  transition: all 0.3s ease 0s;
+}
+.course-page .item:hover .overlay {
+  transition: all 0.3s ease 0s;
+  opacity: 1;
+}
+.course-page .item .image img {
+  display: block;
+}
+.course-page .item .description {
+  border: 1px solid #ebebeb;
+  padding: 26px 15px;
+}
+.course-page .item .description .category {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.course-page .item .description .name {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+.course-page .item .description .desc {
+  line-height: 1.4;
+  font-size: 14px;
+}
+.article-poster {
+  padding-top: 120px;
+  height: 430px;
+  background: url(../images/img-poster.jpg) no-repeat center;
+  text-align: center;
+  box-sizing: border-box;
+}
+.article-poster .inside {
+  width: 820px;
+}
+.article-poster .cat {
+  margin-bottom: 30px;
+}
+.article-poster .cat span {
+  color: #fff;
+  font-size: 26px;
+  font-weight: 600;
+  display: inline-block;
+  background: #59aeba;
+  padding: 4px 6px;
+  text-transform: uppercase;
+}
+.article-poster .title {
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 50px;
+  line-height: 1.3;
+  font-weight: 600;
+}
+.article-detail {
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+.article-detail .video img {
+  display: block;
+}
+.article-detail .sidebar {
+  width: 266px;
+}
+.article-detail .sidebar .widget {
+  padding: 26px 24px;
+  border: 1px solid #dedede;
+  margin-bottom: 40px;
+}
+.article-detail .sidebar .widget h3 {
+  color: #1b1b1b;
+  font-size: 18px;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+.article-detail .sidebar .widget.about-course ul li {
+  margin-bottom: 26px;
+  font-size: 16px;
+  color: #737373;
+}
+.article-detail .sidebar .widget.course-participants ul li {
+  margin: 0 2px 16px;
+}
+.article-detail .sidebar .widget.course-participants ul li a {
+  border-radius: 38px;
+  height: 38px;
+  width: 38px;
+  background: #737373;
+  display: block;
+}
+.article-detail .sidebar .widget.course-participants .all-participants {
+  padding-top: 14px;
+}
+.article-detail .sidebar .widget.course-participants .all-participants a {
+  color: #3e8993;
+  text-decoration: underline;
+}
